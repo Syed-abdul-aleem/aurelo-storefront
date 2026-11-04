@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — AURELO</title>
+<meta name="description" content="Complete your AURELO order.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%2324382E'/><text x='32' y='44' font-size='34' font-family='Georgia' fill='%23F5F1E8' text-anchor='middle'>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,460;0,560;0,640;1,460&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="loader" class="loader" aria-hidden="true"><div class="loader-mark">AURELO</div><div class="loader-bar"><span></span></div><small>Fewer, better things</small></div>
+<div class="announce"><div class="wrap">
+  <span>The Autumn Edit — up to 20% off considered layers, ends Sunday.</span>
+  <span>Ends in <strong data-countdown>—</strong></span>
+</div></div>
+<header class="site-header">
+  <div class="wrap header-in">
+    <button id="navToggle" class="icon-btn" type="button" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    <a class="wordmark" href="index.html">AUREL<em>O</em></a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?cat=Outerwear">Outerwear</a>
+      <a href="shop.html?cat=Knitwear">Knitwear</a>
+      <a href="index.html#story">Our Story</a>
+    </nav>
+    <div class="header-actions">
+      <div class="search-wrap">
+        <i data-lucide="search"></i>
+        <input id="siteSearch" type="search" placeholder="Search coats, knits, silk…" aria-label="Search products" autocomplete="off">
+        <div id="searchSuggest" class="search-suggest" hidden></div>
+      </div>
+      <button class="icon-btn" type="button" data-open-cart aria-label="Open your bag"><i data-lucide="shopping-bag"></i><span class="cart-count" data-cart-count>0</span></button>
+    </div>
+  </div>
+  <nav id="mobileNav" class="mobile-nav" aria-label="Mobile">
+    <div class="mobile-search"><input id="mobileSearch" type="search" placeholder="Search the collection…" aria-label="Search products"></div>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop all</a>
+    <a href="shop.html?cat=Outerwear">Outerwear</a>
+    <a href="shop.html?cat=Knitwear">Knitwear</a>
+    <a href="index.html#story">Our Story</a>
+    <a href="cart.html">Your Bag</a>
+  </nav>
+</header>
+<main id="main"><div class="wrap">
+  <div class="page-head"><p class="eyebrow">Final step</p><h1>Checkout</h1></div>
+  <div id="checkoutMain" class="co-grid">
+    <form id="checkoutForm" class="co-form">
+      <h3>Contact</h3>
+      <div class="f-row">
+        <div class="f-field"><label for="coEmail">Email address</label><input id="coEmail" type="email" required placeholder="you@example.com" autocomplete="email"></div>
+        <div class="f-field"><label for="coPhone">Phone (for delivery updates)</label><input id="coPhone" type="tel" placeholder="+1 555 000 1234" autocomplete="tel"></div>
+      </div>
+      <h3>Delivery address</h3>
+      <div class="f-row">
+        <div class="f-field"><label for="coFirst">First name</label><input id="coFirst" required autocomplete="given-name"></div>
+        <div class="f-field"><label for="coLast">Last name</label><input id="coLast" required autocomplete="family-name"></div>
+      </div>
+      <div class="f-field" style="margin-top:14px"><label for="coAddr">Street address</label><input id="coAddr" required placeholder="House, street, area" autocomplete="street-address"></div>
+      <div class="f-row" style="margin-top:14px">
+        <div class="f-field"><label for="coCity">City</label><input id="coCity" required autocomplete="address-level2"></div>
+        <div class="f-field"><label for="coZip">Postal code</label><input id="coZip" required autocomplete="postal-code"></div>
+      </div>
+      <h3>Payment</h3>
+      <div class="f-row">
+        <div class="f-field"><label for="coCard">Card number</label><input id="coCard" inputmode="numeric" placeholder="4242 4242 4242 4242" required></div>
+        <div class="f-field"><label for="coExp">Expiry · CVC</label><input id="coExp" placeholder="12 / 28 · 123" required></div>
+      </div>
+      <p class="muted small" style="margin:12px 0 18px">Demo checkout — no real payment is taken. Connect your payment provider here in production.</p>
+      <button class="btn btn-solid" type="submit" style="width:100%;justify-content:center">Place order</button>
+    </form>
+    <aside class="summary" aria-label="Order summary">
+      <h3>Your order</h3>
+      <div id="coItems"></div>
+      <div class="sum-row" style="margin-top:10px"><span>Subtotal</span><span id="coSubtotal">$0</span></div>
+      <div class="sum-row"><span>Shipping</span><span id="coShipping">—</span></div>
+      <div class="sum-row total"><span>Total</span><span id="coTotal">$0</span></div>
+      <p class="muted small" style="margin-top:12px">60-day returns · Free repairs for life · Plastic-free delivery</p>
+    </aside>
+  </div>
+  <div id="orderDone" class="order-done" hidden>
+    <i data-lucide="check-circle-2"></i>
+    <h1>Order confirmed</h1>
+    <p class="muted">Thank you — your order <strong id="orderNum">AUR-000000</strong> is being prepared in the studio.<br>A confirmation letter is on its way to your inbox.</p>
+    <p style="margin-top:22px"><a class="btn btn-solid" href="shop.html">Keep browsing</a></p>
+  </div>
+</div></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="wordmark" href="index.html">AUREL<em style="color:var(--clay)">O</em></a>
+        <p style="margin-top:14px;max-width:34ch">Fewer, better things. Considered clothing in natural fibres, made to be worn for a decade — not a season.</p>
+      </div>
+      <div><h4>Shop</h4><ul>
+        <li><a href="shop.html">All pieces</a></li>
+        <li><a href="shop.html?cat=Outerwear">Outerwear</a></li>
+        <li><a href="shop.html?cat=Knitwear">Knitwear</a></li>
+        <li><a href="shop.html?cat=Tailoring">Tailoring</a></li>
+        <li><a href="shop.html?cat=Essentials">Essentials</a></li>
+      </ul></div>
+      <div><h4>Help</h4><ul>
+        <li><a href="cart.html">Your bag</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="product.html?id=sculpted-wool-trench">Size guide (on product pages)</a></li>
+        <li><a href="index.html#story">Our story</a></li>
+        <li><a href="mailto:studio@aurelo.example">studio@aurelo.example</a></li>
+      </ul></div>
+      <div><h4>The Considered List</h4>
+        <p style="margin-bottom:12px">One letter a week — new pieces, fabric notes, early access to small runs.</p>
+        <form class="newsletter-form" novalidate>
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><input type="email" placeholder="Your email address" aria-label="Email address" style="flex:1;min-width:180px;padding:11px 14px;border-radius:999px;border:1px solid rgba(237,231,217,.3);background:transparent;color:#fff;font:inherit">
+          <button class="btn btn-light" type="submit" style="padding:11px 20px">Join</button></div>
+          <p class="nl-msg" role="status"></p>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> AURELO Studio. Placeholder demo content.</span>
+      <span>Natural fibres · Plastic-free shipping · Free repairs for life</span>
+    </div>
+  </div>
+</footer>
+<div id="drawerBackdrop" class="backdrop" hidden></div>
+<aside id="cartDrawer" class="drawer" aria-hidden="true" aria-label="Your shopping bag">
+  <div class="drawer-head"><h2>Your Bag</h2>
+    <button id="drawerClose" class="icon-btn" type="button" aria-label="Close bag"><i data-lucide="x"></i></button></div>
+  <div class="drawer-items">
+    <div id="drawerEmpty" class="drawer-empty">
+      <img src="assets/img/illustrations/empty-bag.svg" alt="Illustration of an empty shopping bag">
+      <h3>Your bag is empty</h3>
+      <p class="muted small">Beautiful things take a moment to choose. Start with our best-loved pieces.</p>
+      <p style="margin-top:14px"><a class="btn btn-solid" href="shop.html">Browse the collection</a></p>
+    </div>
+    <div id="drawerItems"></div>
+  </div>
+  <div id="drawerFoot" class="drawer-foot" hidden>
+    <div class="sum-row"><span>Subtotal</span><strong id="drawerSubtotal">$0</strong></div>
+    <p class="muted small" style="margin:4px 0 12px">Shipping &amp; taxes calculated at checkout. Free shipping over $150.</p>
+    <a class="btn btn-solid" href="cart.html" style="width:100%;justify-content:center">Review bag</a>
+    <a class="btn btn-outline" href="checkout.html" style="width:100%;justify-content:center;margin-top:9px">Checkout</a>
+  </div>
+</aside>
+<div id="toast" class="toast" hidden role="status"></div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

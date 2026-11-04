@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Empty shopping bag illustration">
+<g fill="none" stroke="#2A2723" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+<path d="M84 92 L236 92 L224 208 L96 208 Z" fill="#EFE9DD"/>
+<path d="M126 92 Q126 52 160 52 Q194 52 194 92" />
+<circle cx="160" cy="140" r="17" stroke-dasharray="4 7"/>
+<path d="M60 208 L260 208" stroke-dasharray="2 10"/>
+</g>
+</svg>

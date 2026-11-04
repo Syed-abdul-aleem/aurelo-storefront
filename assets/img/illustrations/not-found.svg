@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" role="img" aria-label="Empty hanger illustration for 404 page">
+<g fill="none" stroke="#2A2723" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+<path d="M210 58 Q210 30 236 30 Q260 30 260 52 Q260 70 238 74 Q224 77 222 92" />
+<path d="M210 96 L84 196 Q74 204 86 204 L334 204 Q346 204 336 196 Z" fill="#EFE9DD"/>
+<rect x="252" y="196" width="66" height="88" rx="6" fill="#fff"/>
+<path d="M268 222 L302 222 M268 240 L302 240" />
+<circle cx="285" cy="208" r="4" fill="#2A2723"/>
+<path d="M60 300 L360 300" stroke-dasharray="2 12"/>
+</g>
+<text x="120" y="262" font-family="Georgia, serif" font-size="44" fill="#2A2723">404</text>
+</svg>

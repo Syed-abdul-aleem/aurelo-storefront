@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 860" role="img" aria-label="Editorial illustration of the Sculpted Wool Trench">
+<rect width="720" height="860" fill="#EFE9DD"/>
+<path d="M96 860 L96 340 Q96 120 360 120 Q624 120 624 340 L624 860 Z" fill="#E3DCCB"/>
+<circle cx="560" cy="212" r="64" fill="#B07D4F"/>
+<g transform="translate(60,60) scale(1.0)" stroke="#2A2723" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+<path d="M218 178 L168 205 L196 470 L228 470 L228 640 L372 640 L372 470 L404 470 L432 205 L382 178 Q340 205 300 205 Q260 205 218 178 Z" fill="#B9A88F"/>
+<path d="M262 205 L300 300 L338 205" fill="none"/><path d="M262 205 L300 262 L338 205" fill="none"/><rect x="226" y="428" width="148" height="16" fill="#978975"/><circle cx="322" cy="330" r="5" fill="#2A2723"/><circle cx="322" cy="372" r="5" fill="#2A2723"/><circle cx="278" cy="330" r="5" fill="#2A2723"/><circle cx="278" cy="372" r="5" fill="#2A2723"/>
+</g>
+<path d="M84 780 L636 780" stroke="#2A2723" stroke-width="3" stroke-dasharray="2 12"/>
+</svg>

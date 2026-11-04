@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="150 140 300 380" role="img" aria-label="Garment illustration">
+<rect width="600" height="720" fill="#E9EDEA"/>
+<ellipse cx="300" cy="656" rx="150" ry="16" fill="#000" opacity="0.08"/>
+<g stroke="#2A2723" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+<path d="M228 180 L168 212 L200 372 L232 364 L232 628 L368 628 L368 364 L400 372 L432 212 L372 180 L300 214 Z" fill="#EDF0EE"/>
+<path d="M268 182 L300 226 L332 182 L318 176 L300 198 L282 176 Z" fill="#c2c4c3"/><path d="M300 226 L300 620" /><circle cx="300" cy="290" r="4" fill="#2A2723"/><circle cx="300" cy="350" r="4" fill="#2A2723"/><circle cx="300" cy="410" r="4" fill="#2A2723"/><circle cx="300" cy="470" r="4" fill="#2A2723"/><path d="M246 520 L286 520 L286 566 L246 566 Z" fill="none"/>
+</g>
+</svg>
